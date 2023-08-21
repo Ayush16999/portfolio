@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myname {
+  background: -webkit-linear-gradient(#915af5, #d048f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* /* .Myscroll {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #111112;
+    box-shadow: inset 0 0 5px #d048f0; 
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d048f0;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #915af5;
+  } 
+
+  .active {
+    color: #d048f0;
+  }
+
+ 
