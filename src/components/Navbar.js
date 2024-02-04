@@ -30,17 +30,17 @@ const Navbar = () => {
   },[])
 
   return (
-    <div className={shadow ? "text-white shadow-lg shadow-violet-500 bg-[#111112] fixed top-0 z-[999] w-screen" : "text-white bg-[#111112] fixed top-0 z-[999] w-screen"}>
+    <div className={shadow ? "text-white border-b-2 border-white/10 bg-[#111112] fixed top-0 z-[999] w-screen" : "text-white bg-[#111112] fixed top-0 z-[999] w-screen"}>
       <div className="px-8 flex justify-between items-center max-xs:px-2">
-        <div className="relative">
+        <div className="relative ">
           <Link href={"/"}>
-            <Image src={logo} width={150} height={0} alt="logo" />
+            <Image src={logo} width={75} height={0} alt="logo" />
           </Link>
-          <div className="w-1/2 absolute bottom-8 right-4 mx-auto h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+          {/* <div className="w-1/2 absolute bottom-8 right-4 mx-auto h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div> */}
         </div>
         <ul className="hidden md:flex gap-10 text-xl">
           <ScrollLink
-            className="cursor-pointer font-semibold"
+            className="cursor-pointer font-normal"
             activeClass="active"
             to="home"
             spy={true}
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li>Home</li>
           </ScrollLink>
           <ScrollLink
-            className="cursor-pointer font-semibold"
+            className="cursor-pointer font-normal"
             activeClass="active"
             to="about"
             spy={true}
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li>About</li>
           </ScrollLink>
           <ScrollLink
-            className="cursor-pointer font-semibold"
+            className="cursor-pointer font-normal"
             activeClass="active"
             to="skills"
             spy={true}
@@ -68,7 +68,7 @@ const Navbar = () => {
             <li>Skills</li>
           </ScrollLink>
           <ScrollLink
-            className="cursor-pointer font-semibold"
+            className="cursor-pointer font-normal"
             activeClass="active"
             to="projects"
             spy={true}
@@ -77,7 +77,7 @@ const Navbar = () => {
             <li>Projects</li>
           </ScrollLink>
           <ScrollLink
-            className="cursor-pointer font-semibold"
+            className="cursor-pointer font-normal"
             activeClass="active"
             to="contact"
             spy={true}

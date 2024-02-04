@@ -7,6 +7,8 @@ import Skills from "@/components/Skills";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
+import AnimatedCursorComponent from "@/components/AnimatedCursorComponent";
+
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
@@ -21,6 +23,8 @@ export default function Home() {
     }, 3000);
   }, []);
 
+
+
   return (
     <>
       {loader ? (
@@ -28,8 +32,8 @@ export default function Home() {
       ) : (
         <div className="Myscroll bg-[#111112] min-h-screen duration-300 overflow-hidden">
           <Head>
-            <title>Ayush Kumar || Frontend Developer</title>
-            <link rel="icon" href="/favicon.ico" />
+            <title>Ayush Kumar Portfolio</title>
+            <link rel="icon" href="/favicon.png" />
           </Head>
           <Navbar />
           <Hero />
@@ -37,6 +41,7 @@ export default function Home() {
           <Skills />
           <Projects />
           <Contact />
+          {/* <AnimatedCursorComponent /> */}
         </div>
       )}
     </>

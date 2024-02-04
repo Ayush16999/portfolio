@@ -7,14 +7,16 @@ import { MyProjects } from "@/utils/MyProjects";
 import { Autoplay, Scrollbar, Navigation } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 
 function Projects() {
   return (
-    <div id="projects" className="min-h-screen mt-10">
-      <div className="py-8">
-        <h2 className="text-white w-max mx-auto border-b-4 flex justify-center border-violet-600 text-7xl font-bold max-lg:text-5xl max-sm:text-3xl max-xs:text-2xl">
-          Some Projects I've Built
-        </h2>
+    <div id="projects" className="min-h-screen mt-40 px-10">
+      <div className="py-20">
+      <motion.h2 whileInView={{x: 100}} transition={{duration: 1}} className="text-5xl w-max  text-white font-semibold tracking-widest max-sm:text-4xl">
+      Unveiling My Tech Showcase
+        </motion.h2>
         {/* <div className="w-96 absolute bottom-2 right-1/2 mx-auto h-1 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div> */}
       </div>
       <div className="h-[90vh] mt-20">
